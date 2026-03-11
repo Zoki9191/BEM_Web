@@ -1,0 +1,337 @@
+<!doctype html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="output/main.css" />
+    <title>Fake Shop</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="header__logo">Fake Shop!</div>
+
+      <div class="header__searchbar">
+        <input
+          type="text"
+          id="searchbar"
+          placeholder="Kategorie suchen..."
+          autocomplete="off"
+        />
+        <div id="suggestions"></div>
+      </div>
+
+      <div class="header__hamburger" id="hamburger">
+        <a href="#" class="header__hamburger-line"></a>
+        <a href="#" class="header__hamburger-line"></a>
+        <a href="#" class="header__hamburger-line"></a>
+      </div>
+
+      <nav class="nav nav--desktop">
+        <a href="#" class="nav__item">Home</a>
+        <a href="#about-us" class="nav__item">Über Uns</a>
+        <a href="#" class="nav__item">Kontakt</a>
+      </nav>
+    </header>
+
+    <nav class="sidebar" id="sidebar">
+      <div class="sidebar__search-container">
+        <div class="side__searchbar">
+          <input
+            type="text"
+            id="sidebarSearchbar"
+            placeholder="Kategorie suchen..."
+            autocomplete="off"
+          />
+          <div id="sidebarSuggestions" class="side__suggestions"></div>
+        </div>
+      </div>
+
+      <div class="sidebar__content">
+        <a href="#" class="sidebar__item">Home</a>
+        <a href="#about-us" class="sidebar__item">Über Uns</a>
+        <a href="#" class="sidebar__item">Kontakt</a>
+      </div>
+    </nav>
+
+    <div class="overlay" id="overlay"></div>
+    <section class="hero" id="hero">
+      <h1 class="hero-title">Fake Shop!</h1>
+      <a href="allProducts.html" class="hero__button">Alle Waren ansehen</a>
+
+      <div class="hero-products__wrapper">
+        <!-- Scroll Buttons -->
+        <button
+          class="hero-products__arrow-left"
+          onclick="ProductScroll.moveLeft()"
+        >
+          ‹
+        </button>
+        <button
+          class="hero-products__arrow-right"
+          onclick="ProductScroll.moveRight()"
+        >
+          ›
+        </button>
+
+        <h3 class="hero-products__subtitle">Waren Kategorie:</h3>
+
+        <div class="hero-products__scrollContainer">
+          <!-- Damen Kleidung -->
+          <div class="hero-products__item-box">
+            <h3 class="hero-products__title">Damen Kleidung</h3>
+            <img
+              src="/images/Damen Kleidung.jpg"
+              alt="Damen Kleidung"
+              class="hero-products__image"
+            />
+            <span class="hero-products__price">ab 20€</span>
+            <a
+              href="allProducts.html?category=women's clothing"
+              class="hero-products__view"
+              data-category="women's clothing"
+              >Waren ansehen</a
+            >
+          </div>
+
+          <!-- Herren Kleidung -->
+          <div class="hero-products__item-box">
+            <h3 class="hero-products__title">Herren Kleidung</h3>
+            <img
+              src="/images/HerrenKleidung.jpg"
+              alt="Herren Kleidung"
+              class="hero-products__image"
+            />
+            <span class="hero-products__price">ab 20€</span>
+            <a
+              href="allProducts.html?category=men's clothing"
+              class="hero-products__view"
+              data-category="men's clothing"
+              >Waren ansehen</a
+            >
+          </div>
+
+          <!-- Schmuck -->
+          <div class="hero-products__item-box">
+            <h3 class="hero-products__title">Schmuck</h3>
+            <img
+              src="/images/Schmuck.jpg"
+              alt="Schmuck"
+              class="hero-products__image"
+            />
+            <span class="hero-products__price">ab 30€</span>
+            <a
+              href="allProducts.html?category=jewelery"
+              class="hero-products__view"
+              data-category="jewelery"
+              >Waren ansehen</a
+            >
+          </div>
+
+          <!-- Kosmetik Waren -->
+          <div class="hero-products__item-box">
+            <h3 class="hero-products__title">Kosmetik Waren</h3>
+            <img
+              src="/images/kosmetik.jpg"
+              alt="Kosmetik Waren"
+              class="hero-products__image"
+            />
+            <span class="hero-products__price">ab 5€</span>
+            <a
+              href="allProducts.html?category=beauty"
+              class="hero-products__view"
+              data-category="beauty"
+              >Waren ansehen</a
+            >
+          </div>
+
+          <!-- Lebensmittel -->
+          <div class="hero-products__item-box">
+            <h3 class="hero-products__title">Lebensmittel</h3>
+            <img
+              src="/images/Lebensmittel.jpg"
+              alt="Lebensmittel"
+              class="hero-products__image"
+            />
+            <span class="hero-products__price">ab 3€</span>
+            <a
+              href="allProducts.html?category=groceries"
+              class="hero-products__view"
+              data-category="groceries"
+              >Waren ansehen</a
+            >
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="about-us" id="about-us">
+      <h2 class="about-us__title">Mode, die deine Geschichte erzählt</h2>
+      <p class="about-us__intro">
+        Herzlich willkommen bei <strong>Easy-Shop</strong>! Wir glauben, dass
+        Kleidung viel mehr ist als nur Stoff auf der Haut. Sie ist Ausdruck
+        deiner Persönlichkeit, dein Begleiter im Alltag und das gewisse Extra
+        für deine besonderen Momente.
+      </p>
+
+      <h3 class="about-us__subtitle">Wie alles begann</h3>
+      <p class="about-us__text">
+        Die Idee zu Easy-Shop entstand aus einer einfachen Suche: Wir wollten
+        Mode finden, die nicht nur Trends hinterherläuft, sondern durch
+        Qualität, faire Preise und einen einzigartigen Stil überzeugt. Da wir
+        dieses Gesamtpaket nirgends finden konnten, haben wir beschlossen, es
+        selbst zu kreieren.
+      </p>
+
+      <h3 class="about-us__subtitle">Unsere Philosophie</h3>
+      <p class="about-us__text">
+        In einer Welt von „Fast Fashion“ setzen wir auf Kuration statt Masse.
+        Jedes Teil in unserem Sortiment wird von uns sorgfältig ausgewählt. Wir
+        achten auf:
+      </p>
+      <ul class="about-us__list">
+        <li>
+          <strong>Tragekomfort:</strong> Mode muss sich so gut anfühlen, wie sie
+          aussieht.
+        </li>
+        <li>
+          <strong>Stilsicherheit:</strong> Von zeitlosen Basics bis hin zu
+          echten Eyecatchern.
+        </li>
+        <li><strong>Kundennähe:</strong> Du stehst bei uns im Mittelpunkt.</li>
+      </ul>
+
+      <h3 class="about-us__subtitle">Warum bei uns shoppen?</h3>
+      <p class="about-us__text">
+        Wir sind kein anonymer Großkonzern. Hinter Easy-Shop steht ein kleines,
+        passioniertes Team, das jedes Paket mit Liebe verpackt. Wir möchten,
+        dass du dein neues Lieblingsteil bei uns findest – unkompliziert, sicher
+        und mit einem guten Gefühl.
+      </p>
+
+      <p class="about-us__footer">
+        Vielen Dank, dass du uns auf unserer Reise begleitest!
+      </p>
+      <h3>Dein Team von Easy-Shop</h3>
+    </section>
+
+    <section class="comments">
+      <h3 class="comments__title">
+        „ Möchten Sie eine Bewertung zu unserem Geschäft abgeben? “
+      </h3>
+      <div class="comments__items">
+        <input type="text" id="firstname" placeholder="Vorname eingeben" />
+        <input type="text" id="lastname" placeholder="Nachname eingeben" />
+        <input
+          type="email"
+          id="email"
+          placeholder="Bitte E-mail Adresse eingeben"
+          required
+        />
+        <textarea id="commentInput" placeholder="Kommentar eingeben"></textarea>
+      </div>
+      <button id="save">Speichern</button>
+      <div class="comments__texts">
+        <ul id="commentList"></ul>
+      </div>
+    </section>
+
+    <section class="opening-times">
+      <h3 class="opening-times__title">Öffnungszeiten</h3>
+      <div class="opening-times__wrapper">
+        <ul class="opening-times__days">
+          <li class="opening-times__day">Mo</li>
+          <li class="opening-times__day">Di</li>
+          <li class="opening-times__day">Mi</li>
+          <li class="opening-times__day">Do</li>
+          <li class="opening-times__day">Fr</li>
+          <li class="opening-times__day">Sa</li>
+          <li class="opening-times__day">So</li>
+        </ul>
+        <ul class="opening-times__times">
+          <li class="opening-times__time">08:00 - 19:00</li>
+          <li class="opening-times__time">08:00 - 19:00</li>
+          <li class="opening-times__time">08:00 - 19:00</li>
+          <li class="opening-times__time">08:00 - 19:00</li>
+          <li class="opening-times__time">08:00 - 19:00</li>
+          <li class="opening-times__time">10:00 - 18:00</li>
+          <li class="opening-times__time">Geschlossen</li>
+        </ul>
+      </div>
+    </section>
+    <section class="products-element" style="display: none"></section>
+    <footer class="footer">
+      <div class="footer-map">
+        <h2 class="footer-map__title">Hier findest du uns</h2>
+        <div class="footer-map__container">
+          <iframe
+            src="https://www.google.com/maps/embed?..."
+            width="100%"
+            height="450"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+          >
+          </iframe>
+        </div>
+      </div>
+      <div class="footer__container">
+        <div class="footer__column">
+          <h3 class="footer__logo">Easy-Shop</h3>
+          <p class="footer__view">
+            Mode, die deine Geschichte erzählt. Wir stehen für Qualität und
+            Stil, der zu deinem Alltag passt.
+          </p>
+        </div>
+
+        <div class="footer__column">
+          <h4 class="footer__title">Shopping</h4>
+          <ul class="footer__list">
+            <li><a href="#">Neuheiten</a></li>
+            <li><a href="#">Bestseller</a></li>
+            <li><a href="#">Sale %</a></li>
+            <li><a href="#">Größentabelle</a></li>
+          </ul>
+        </div>
+
+        <div class="footer__column">
+          <h4 class="footer__title">Support</h4>
+          <ul class="footer__list">
+            <li><a href="#">Versand & Rückgabe</a></li>
+            <li><a href="#">Track Order</a></li>
+            <li><a href="#">FAQ</a></li>
+            <li id="adress">
+              <a href="#">Adresse: <br /> </a>
+              Beispielstraße 1, 90901 Deutschland<br />
+              beispiel@yahoo.com <br />
+              +49 1525909011
+            </li>
+          </ul>
+        </div>
+
+        <div class="footer__column footer__column--newsletter">
+          <h4 class="footer__title">Stay in Touch</h4>
+          <p>
+            Melde dich an und erhalte 10% Rabatt auf deine erste Bestellung.
+          </p>
+          <form class="footer__newsletter-form">
+            <input type="email" placeholder="Deine E-Mail" required />
+            <button type="submit">OK</button>
+          </form>
+        </div>
+      </div>
+
+      <div class="footer__bottom">
+        <div class="footer__bottom-content">
+          <p>&copy; 2026 Easy-Shop. Alle Rechte vorbehalten.</p>
+          <div class="footer__legal">
+            <a href="#">Impressum</a>
+            <a href="#">Datenschutz</a>
+            <a href="#">AGB</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="main.js" type="module"></script>
+  </body>
+</html>
