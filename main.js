@@ -1,36 +1,4 @@
-// import { AllProductsView } from "./allProductView.js";
-// import { savedCommentsShow } from "./commentView.js";
-// import { initMenu, ProductScroll } from "./menu.js";
-// import { saveCommentsToLocalStorage } from "./saveToLocSt.js";
-// import { loadProduct } from "./searchbar.js";
 
-// document.addEventListener("DOMContentLoaded", async () => {
-//   await loadProduct();
-//   savedCommentsShow();
-
-//   const heroButton = document.getElementById("hero__button");
-
-//   if (heroButton) {
-//     heroButton.addEventListener("click", async () => {
-//       await AllProductsView();
-//       document
-//         .querySelector(".products-element")
-//         ?.scrollIntoView({ behavior: "smooth" });
-//     });
-//   }
-
-//   const saveButton = document.getElementById("save");
-
-//   if (saveButton) {
-//     saveButton.addEventListener("click", () => {
-//       saveCommentsToLocalStorage();
-//       savedCommentsShow();
-//     });
-//   }
-// });
-
-// window.ProductScroll = ProductScroll;
-// window.initMenu = initMenu();
 
 import { AllProductsView } from "./allProductView.js";
 import { savedCommentsShow } from "./commentView.js";
@@ -95,47 +63,3 @@ document.addEventListener("DOMContentLoaded", async () => {
 
 window.ProductScroll = ProductScroll;
 window.initMenu = initMenu();
-
-// import { AllProductsView } from "./allProductView.js";
-// import { savedCommentsShow } from "./commentView.js";
-// import { initMenu, ProductScroll } from "./menu.js";
-// import { saveCommentsToLocalStorage } from "./saveToLocSt.js";
-// import { loadProduct, showSuggestions } from "./searchbar.js";
-
-// document.addEventListener("DOMContentLoaded", async () => {
-//   await loadProduct();
-
-//   savedCommentsShow();
-
-//   const searchbar = document.getElementById("searchbar");
-
-//   if (searchbar) {
-//     searchbar.addEventListener("input", (event) => {
-//       const query = event.target.value;
-//       showSuggestions(query);
-//     });
-//   }
-
-//   const heroButton = document.getElementById("hero__button");
-
-//   if (heroButton) {
-//     heroButton.addEventListener("click", async () => {
-//       await AllProductsView();
-//       document
-//         .querySelector(".products-element")
-//         ?.scrollIntoView({ behavior: "smooth" });
-//     });
-//   }
-
-//   const saveButton = document.getElementById("save");
-
-//   if (saveButton) {
-//     saveButton.addEventListener("click", () => {
-//       saveCommentsToLocalStorage();
-//       savedCommentsShow();
-//     });
-//   }
-// });
-
-// window.ProductScroll = ProductScroll;
-// window.initMenu = initMenu();
