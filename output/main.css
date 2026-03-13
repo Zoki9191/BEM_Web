@@ -393,7 +393,7 @@ body {
   border-radius: 7px;
   gap: 1rem;
   box-shadow: 5px 10px 20px rgba(0, 0, 0, 0.9);
-  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.9)), url("./images/about.jpg");
+  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.9)), url("../images/about.jpg");
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
@@ -549,7 +549,7 @@ body {
   text-shadow: 1px 1px 5px #000;
   font-size: 1.2rem;
   gap: 1rem;
-  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.9)), url("./images/open.jpg");
+  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.9)), url("../images/open.jpg");
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
